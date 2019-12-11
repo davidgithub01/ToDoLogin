@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Just Do it App</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<header class="bar">
+		<div class="bar_left">
+			<h1 class="brand">Just Do It</h1>
+		</div>
+		<div class="bar_right">
+			<input type="submit" id="logout_button" value="logout" class="Button-heavy">
+		</div>
+	</header>
+
+	<div class="Page" id="Tasks_container">
+		<h2 class="Tasks_title">What To Do?</h2>
+		<ul id="Tasks" class="Tasks"></ul>
+		<input type="text" id="Task_create" class="Task_create" placeholder="New Task">
+	</div>
+
+	<div class="Page" id="login_form">
+		<form id="login_form" class="Form">
+			<h2>Login to create tasks</h2>
+			<div>
+				<label for="username">Username</label>
+				<input class="Form_input" type="text" id="username" name="username">
+			</div>
+			<div>
+				<label for="password">Password</label>
+				<input class="Form_input" type="password" id="password" name="password" >
+			</div>
+			<input type="submit" id="login_button" value="login" class="Form_button">
+		</form>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/crud.js"></script>
+	<script type="text/javascript" src="js/authenticate.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
